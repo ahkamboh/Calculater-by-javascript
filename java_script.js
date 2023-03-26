@@ -8,7 +8,7 @@ for (item of buttons) {
             x = ((x - 32) * 5) / 9;
             screen.value = x;
         } else if (buttonText == "DEL") {
-            screen.value = screenValue.slice(0, -1);
+            screen.value = screen.value.slice(0, -1);
             screenValue = screen.value;
         } else if (buttonText == "C") {
             screenValue = "";
