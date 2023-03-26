@@ -7,4 +7,4 @@ This is fully working calculater, using HTML, CSS and basic Java Script.
 # Mobile veiw
 ![mobile view](https://user-images.githubusercontent.com/123060177/227791232-6723ac5a-ddc7-4f4d-8a3e-e2721856650b.png)
 
-#Thank you for your time Here.
+# Thank you for your time Here.
