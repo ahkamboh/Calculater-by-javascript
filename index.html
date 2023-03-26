@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater | ah_kamboh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="png" href="Kambod div-01.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: repeat;
+            background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1500 1100%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cmask id=%22b%22 x=%220%22 y=%220%22 width=%221500%22 height=%221100%22%3E%3Cpath fill=%22url(%23a)%22 d=%22M0 0h1500v1100H0z%22%2F%3E%3C%2Fmask%3E%3Cpath fill=%22%23232220%22 d=%22M0 0h1500v1100H0z%22%2F%3E%3Cg style=%22transform-origin:center center%22 stroke=%22%23ca660c%22 stroke-width=%221.5%22 mask=%22url(%23b)%22%3E%3Cpath fill=%22%23ca660c48%22 d=%22M0 0h75v75H0z%22%2F%3E%3Cpath fill=%22%23ca660c2c%22 d=%22M75 0h75v75H75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M150 0h75v75h-75zM225 0h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c5b%22 d=%22M300 0h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M375 0h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cb3%22 d=%22M450 0h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c98%22 d=%22M525 0h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M600 0h75v75h-75zM675 0h75v75h-75zM750 0h75v75h-75zM825 0h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cc0%22 d=%22M900 0h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M975 0h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c1a%22 d=%22M1050 0h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1125 0h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c73%22 d=%22M1200 0h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1275 0h75v75h-75zM1350 0h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c7f%22 d=%22M1425 0h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c86%22 d=%22M0 75h75v75H0z%22%2F%3E%3Cpath fill=%22%23ca660c68%22 d=%22M75 75h75v75H75z%22%2F%3E%3Cpath fill=%22%23ca660cbb%22 d=%22M150 75h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660ca4%22 d=%22M225 75h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M300 75h75v75h-75zM375 75h75v75h-75zM450 75h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c0a%22 d=%22M525 75h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M600 75h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c16%22 d=%22M675 75h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c1f%22 d=%22M750 75h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c6b%22 d=%22M825 75h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M900 75h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c78%22 d=%22M975 75h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cb0%22 d=%22M1050 75h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1125 75h75v75h-75zM1200 75h75v75h-75zM1275 75h75v75h-75zM1350 75h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c00%22 d=%22M1425 75h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 150h75v75H0zM75 150h75v75H75zM150 150h75v75h-75zM225 150h75v75h-75zM300 150h75v75h-75zM375 150h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660caf%22 d=%22M450 150h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M525 150h75v75h-75zM600 150h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c16%22 d=%22M675 150h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M750 150h75v75h-75zM825 150h75v75h-75zM900 150h75v75h-75zM975 150h75v75h-75zM1050 150h75v75h-75zM1125 150h75v75h-75zM1200 150h75v75h-75zM1275 150h75v75h-75zM1350 150h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c71%22 d=%22M1425 150h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c24%22 d=%22M0 225h75v75H0z%22%2F%3E%3Cpath fill=%22none%22 d=%22M75 225h75v75H75zM150 225h75v75h-75zM225 225h75v75h-75zM300 225h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cfc%22 d=%22M375 225h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M450 225h75v75h-75zM525 225h75v75h-75zM600 225h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c6b%22 d=%22M675 225h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M750 225h75v75h-75zM825 225h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660ca1%22 d=%22M900 225h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c8e%22 d=%22M975 225h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1050 225h75v75h-75zM1125 225h75v75h-75zM1200 225h75v75h-75zM1275 225h75v75h-75zM1350 225h75v75h-75zM1425 225h75v75h-75zM0 300h75v75H0zM75 300h75v75H75zM150 300h75v75h-75zM225 300h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cf4%22 d=%22M300 300h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M375 300h75v75h-75zM450 300h75v75h-75zM525 300h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cc7%22 d=%22M600 300h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M675 300h75v75h-75zM750 300h75v75h-75zM825 300h75v75h-75zM900 300h75v75h-75zM975 300h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c53%22 d=%22M1050 300h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1125 300h75v75h-75zM1200 300h75v75h-75zM1275 300h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cec%22 d=%22M1350 300h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1425 300h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660ce9%22 d=%22M0 375h75v75H0z%22%2F%3E%3Cpath fill=%22none%22 d=%22M75 375h75v75H75z%22%2F%3E%3Cpath fill=%22%23ca660c32%22 d=%22M150 375h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c93%22 d=%22M225 375h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cd8%22 d=%22M300 375h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M375 375h75v75h-75zM450 375h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c6f%22 d=%22M525 375h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M600 375h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c9d%22 d=%22M675 375h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M750 375h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c61%22 d=%22M825 375h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M900 375h75v75h-75zM975 375h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c32%22 d=%22M1050 375h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1125 375h75v75h-75zM1200 375h75v75h-75zM1275 375h75v75h-75zM1350 375h75v75h-75zM1425 375h75v75h-75zM0 450h75v75H0z%22%2F%3E%3Cpath fill=%22%23ca660c25%22 d=%22M75 450h75v75H75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M150 450h75v75h-75zM225 450h75v75h-75zM300 450h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c70%22 d=%22M375 450h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M450 450h75v75h-75zM525 450h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c99%22 d=%22M600 450h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cbd%22 d=%22M675 450h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M750 450h75v75h-75zM825 450h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c94%22 d=%22M900 450h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cbe%22 d=%22M975 450h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c5b%22 d=%22M1050 450h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1125 450h75v75h-75zM1200 450h75v75h-75zM1275 450h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cab%22 d=%22M1350 450h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1425 450h75v75h-75zM0 525h75v75H0z%22%2F%3E%3Cpath fill=%22%23ca660c9b%22 d=%22M75 525h75v75H75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M150 525h75v75h-75zM225 525h75v75h-75zM300 525h75v75h-75zM375 525h75v75h-75zM450 525h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c0d%22 d=%22M525 525h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M600 525h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c0b%22 d=%22M675 525h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M750 525h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c7e%22 d=%22M825 525h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M900 525h75v75h-75zM975 525h75v75h-75zM1050 525h75v75h-75zM1125 525h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c4d%22 d=%22M1200 525h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c6f%22 d=%22M1275 525h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660ca0%22 d=%22M1350 525h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1425 525h75v75h-75zM0 600h75v75H0zM75 600h75v75H75zM150 600h75v75h-75zM225 600h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c4f%22 d=%22M300 600h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c3a%22 d=%22M375 600h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M450 600h75v75h-75zM525 600h75v75h-75zM600 600h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c5e%22 d=%22M675 600h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660ce6%22 d=%22M750 600h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M825 600h75v75h-75zM900 600h75v75h-75zM975 600h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c64%22 d=%22M1050 600h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c3c%22 d=%22M1125 600h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1200 600h75v75h-75zM1275 600h75v75h-75zM1350 600h75v75h-75zM1425 600h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c7e%22 d=%22M0 675h75v75H0z%22%2F%3E%3Cpath fill=%22%23ca660cf6%22 d=%22M75 675h75v75H75z%22%2F%3E%3Cpath fill=%22%23ca660c77%22 d=%22M150 675h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M225 675h75v75h-75zM300 675h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cc2%22 d=%22M375 675h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M450 675h75v75h-75zM525 675h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c3f%22 d=%22M600 675h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cfe%22 d=%22M675 675h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660ce2%22 d=%22M750 675h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M825 675h75v75h-75zM900 675h75v75h-75zM975 675h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cfc%22 d=%22M1050 675h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1125 675h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cf0%22 d=%22M1200 675h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1275 675h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c39%22 d=%22M1350 675h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1425 675h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c01%22 d=%22M0 750h75v75H0z%22%2F%3E%3Cpath fill=%22%23ca660c2b%22 d=%22M75 750h75v75H75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M150 750h75v75h-75zM225 750h75v75h-75zM300 750h75v75h-75zM375 750h75v75h-75zM450 750h75v75h-75zM525 750h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c9e%22 d=%22M600 750h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M675 750h75v75h-75zM750 750h75v75h-75zM825 750h75v75h-75zM900 750h75v75h-75zM975 750h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c6d%22 d=%22M1050 750h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cd3%22 d=%22M1125 750h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1200 750h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660ca1%22 d=%22M1275 750h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cf5%22 d=%22M1350 750h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1425 750h75v75h-75zM0 825h75v75H0z%22%2F%3E%3Cpath fill=%22%23ca660c0a%22 d=%22M75 825h75v75H75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M150 825h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660caa%22 d=%22M225 825h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M300 825h75v75h-75zM375 825h75v75h-75zM450 825h75v75h-75zM525 825h75v75h-75zM600 825h75v75h-75zM675 825h75v75h-75zM750 825h75v75h-75zM825 825h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c60%22 d=%22M900 825h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M975 825h75v75h-75zM1050 825h75v75h-75zM1125 825h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c02%22 d=%22M1200 825h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1275 825h75v75h-75zM1350 825h75v75h-75zM1425 825h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c3c%22 d=%22M0 900h75v75H0z%22%2F%3E%3Cpath fill=%22none%22 d=%22M75 900h75v75H75zM150 900h75v75h-75zM225 900h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cd9%22 d=%22M300 900h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M375 900h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c87%22 d=%22M450 900h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M525 900h75v75h-75zM600 900h75v75h-75zM675 900h75v75h-75zM750 900h75v75h-75zM825 900h75v75h-75zM900 900h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c8b%22 d=%22M975 900h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1050 900h75v75h-75zM1125 900h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c0c%22 d=%22M1200 900h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660ca0%22 d=%22M1275 900h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1350 900h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c38%22 d=%22M1425 900h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 975h75v75H0zM75 975h75v75H75zM150 975h75v75h-75zM225 975h75v75h-75zM300 975h75v75h-75zM375 975h75v75h-75zM450 975h75v75h-75zM525 975h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c5c%22 d=%22M600 975h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M675 975h75v75h-75zM750 975h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c5e%22 d=%22M825 975h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M900 975h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660cd4%22 d=%22M975 975h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1050 975h75v75h-75zM1125 975h75v75h-75zM1200 975h75v75h-75zM1275 975h75v75h-75zM1350 975h75v75h-75zM1425 975h75v75h-75zM0 1050h75v75H0zM75 1050h75v75H75zM150 1050h75v75h-75zM225 1050h75v75h-75zM300 1050h75v75h-75zM375 1050h75v75h-75zM450 1050h75v75h-75zM525 1050h75v75h-75zM600 1050h75v75h-75zM675 1050h75v75h-75zM750 1050h75v75h-75zM825 1050h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660c78%22 d=%22M900 1050h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M975 1050h75v75h-75zM1050 1050h75v75h-75zM1125 1050h75v75h-75zM1200 1050h75v75h-75z%22%2F%3E%3Cpath fill=%22%23ca660ca1%22 d=%22M1275 1050h75v75h-75z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1350 1050h75v75h-75zM1425 1050h75v75h-75z%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CradialGradient id=%22a%22%3E%3Cstop offset=%220%22 stop-color=%22%23fff%22%2F%3E%3Cstop offset=%221%22 stop-color=%22%23fff%22 stop-opacity=%220%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
+        }
+
+        form {
+            cursor: grab;
+        }
+
+        .yellow:active {
+            transform: scale(.98);
+            background: #afa8a8a8;
+        }
+
+        button:active {
+            transform: scale(.98);
+            background: #696666a8;
+        }
+
+        .mai {
+            display: flex;
+            gap: 20px;
+            position: absolute;
+            top: 31.7rem;
+            left: 50%;
+            transform: translate(-53%, -50%) scale(1.3);
+        }
+
+        input {
+            width: 338px;
+            padding: 10px;
+            height: 60px;
+            color: #232220;
+            position: absolute;
+            top: 300px;
+            left: 50.1%;
+            transform: translate(-52%, -50%) scale(1.5);
+        }
+
+        button {
+            border: 1px solid #232220;
+            border-radius: 2px;
+            background: #9a8f8f;
+            padding: 9px 20px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            transition: .5s ease;
+            cursor: grab;
+        }
+
+        .main {
+            display: grid;
+            grid-template: 40px 40px 40px 40px 40px/ 30px 30px 30px 30px;
+            column-gap: 20px;
+            row-gap: 7px;
+        }
+
+        .yellow {
+            background: #232220;
+            border: 1px solid #935012;
+            color: #ff9a36;
+        }
+
+        .main2 button:nth-child(19) {
+            width: 90px;
+        }
+
+        @media (max-width:1024px) {
+            form {
+                transform: scale(.8);
+                position: relative;
+                bottom: 60px;
+            }
+        }
+
+        @media (max-width:1000px) {
+            form {
+                transform: scale(1);
+                position: relative;
+                bottom: 0px;
+            }
+        }
+
+        @media (max-width:850px) {
+            form {
+                transform: scale(1);
+                position: relative;
+                top: 100px;
+            }
+        }
+
+        @media (max-width:800px) {
+            form {
+                transform: scale(1);
+                position: relative;
+                top: 0px;
+            }
+        }
+
+        @media (max-width:600px) {
+            .mai {
+                display: grid;
+                transform: translate(-52%, -50%) scale(.8);
+                top: 26.3rem;
+            }
+
+            .main {
+                position: relative;
+                grid-template: 40px 40px 40px / 30px 30px 30px 30px 30px 30px 30px;
+            }
+
+            button:last-child {
+                width: 90px;
+            }
+
+            .main2 button:last-child {
+                width: 140px;
+            }
+
+            input {
+                width: 182px;
+                position: relative;
+                top: 19em;
+            }
+        }
+
+        @media (max-width:350px) {
+            form {
+                position: relative;
+                top: -80px;
+                left: 2px;
+            }
+        }
+
+        @media (max-width:300px) {
+            .mai {
+                display: grid;
+                transform: translate(-52%, -50%) scale(1);
+                margin-top: 30px;
+
+            }
+
+            form {
+                transform: scale(.8);
+                position: relative;
+                top: 60px;
+            }
+
+            button:last-child {
+                width: 30px;
+            }
+
+            .main2 button:last-child {
+                width: 90px;
+            }
+
+            .main {
+
+                grid-template: 40px 40px 40px 40px 40px/ 30px 30px 30px 30px 30px;
+            }
+
+            input {
+                width: 160px;
+                left: 143px;
+                top: 150px;
+            }
+
+            .main2 {
+                top: -60px;
+            }
+        }
+
+        nav {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -5%);
+            top: 5%;
+        }
+
+        marquee {
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            left: 50%;
+            transform: translate(-50%, -100%);
+            color: #ff9a36;
+        }
+
+        marquee a {
+            text-decoration: none;
+            color: wheat;
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav>
+        <img src="Kambod div-01.png" alt="" height="70">
+    </nav>
+
+    <form action="">
+        <div class="text"><input autocomplete="off" disabled name="display" name="screen" id="screen" type="text"></div>
+        <div class="mai">
+            <div class="main">
+                <button type="button">sin</button>
+                <button type="button">cos</button>
+                <button type="button">tan</button>
+                <button type="button">log10</button>
+                <button type="button">1/x</button>
+                <button type="button">x²</button>
+                <button type="button" value="(" onclick="display.value += '(' ">(</button>
+                <button type="button" value=")" onclick="display.value += ')' ">)</button>
+                <button type="button">x!</button>
+                <button type="button">π</button>
+                <button type="button">log</button>
+                <button type="button"> ∛</button>
+                <button type="button" value="**" onclick="display.value += '**' ">xⁿ</button>
+                <button type="button">℃</button>
+                <button type="button">℉</button>
+                <button type="button">√</button>
+                <button type="button" value="=>" onclick="display.value += '>=' ">=></button>
+                <button type="button">%</button>
+                <button type="button" value="000" onclick="display.value += '000' ">000</button>
+                <button type="button" value="00" onclick="display.value += '00' ">00</button>
+            </div>
+            <div class="main main2">
+                <button type="button" onclick="display.value = '' ">C</button>
+                <button type="button" value="-" onclick="display.value += '-' ">+/-</button>
+                <button type="button" onclick="display.value=display.value.toString().slice(0,-1)">DEL</button>
+                <button type="button" value="/" class="yellow" onclick="display.value += '/' ">÷</button>
+                <button type="button" value="1" onclick="display.value += '1' ">1</button>
+                <button type="button" value="2" onclick="display.value += '2' ">2</button>
+                <button type="button" value="3" onclick="display.value += '3' ">3</button>
+                <button type="button" value="*" onclick="display.value += '*' " class="yellow">×</button>
+                <button type="button" value="4" onclick="display.value += '4' ">4</button>
+                <button type="button" value="5" onclick="display.value += '5' ">5</button>
+                <button type="button" value="6" onclick="display.value += '6' ">6</button>
+                <button type="button" value="-" onclick="display.value += '-' " class="yellow ">&#x2212;</button>
+                <button type="button" value="7" onclick="display.value += '7' ">7</button>
+                <button type="button" value="8" onclick="display.value += '8' ">8</button>
+                <button type="button" value="9" onclick="display.value += '9' ">9</button>
+                <button type="button" value="+" onclick="display.value += '+' " class="yellow">+</button>
+                <button type="button" value="0" onclick="display.value += '0' ">0</button>
+                <button type="button" value="." onclick="display.value += '.' ">.</button>
+                <button type="button" value="=" class="yellow" onclick="display.value=eval(display.value)">=</button>
+            </div>
+        </div>
+    </form>
+    <marquee style="font-size: 1em;">Design and code by<a href="https://ahkamboh.github.io/Portfolio/"> ah_kamboh</a>
+    </marquee>
+
+    <script src="java_script.js" async></script>
+</body>
+
+</html>
