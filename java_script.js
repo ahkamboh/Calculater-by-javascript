@@ -42,6 +42,8 @@ for (item of buttons) {
                 screen.value = screen.value * Math.PI;
                 break;
             case "1/x":
+                 screen.value = 1/screen.value;
+                break;
             case "x²":
                 screen.value = screen.value * screen.value;
                 break;
