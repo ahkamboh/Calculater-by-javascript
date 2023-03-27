@@ -22,15 +22,15 @@ for (item of buttons) {
                 break;
             case "tan":
                 screen.value = (screen.value * Math.PI) / 180;
-                screen.value = Math.tan(x);
+                screen.value = Math.tan(screen.value);
                 break;
             case "cos":
                 screen.value = (screen.value * Math.PI) / 180;
-                screen.value = Math.cos(x);
+                screen.value = Math.cos(screen.value);
                 break;
             case "sin":
                 screen.value = (screen.value * Math.PI) / 180;
-                screen.value = Math.sin(x);
+                screen.value = Math.sin(screen.value);
                 break;
             case "log10":
                 screen.value = Math.log10(screen.value);
