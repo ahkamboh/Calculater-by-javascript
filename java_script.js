@@ -15,10 +15,10 @@ for (item of buttons) {
                 break;
             case "C":
                 screenValue = "";
-                screen.value = screenValue;
+                screen.value = screen.value;
                 break;
             case "℉":
-                screen.value = ((screen.value - 32) * 5) / 9;
+                 screen.value =  screen.value*(9/5) + 32;
                 break;
             case "tan":
                 screen.value = (screen.value * Math.PI) / 180;
@@ -85,9 +85,7 @@ for (item of buttons) {
 //             screenValue = "";
 //             screen.value = screenValue;
 //         } else if (buttonText == "℉") {
-//             var x = screen.value;
-//             x = ((x - 32) * 5) / 9;
-//             screen.value = x;
+//             screen.value =  screen.value*(9/5) + 32;
 //         } else if (buttonText == "tan") {
 //             var x = screen.value;
 //             x = (x * Math.PI) / 180;
